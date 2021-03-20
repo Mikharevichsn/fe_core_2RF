@@ -1,0 +1,215 @@
+:root {
+  --accent: #ff6c00;
+  --main-font: 'Open Sans', sans-serif;
+  --headline-font: 'Raleway', sans-serif;
+  --dark-text: #303030;
+  --text-light: #9da4bd;
+}
+
+body {
+  font-family: var(--main-font);
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 1.86;
+  letter-spacing: 0.02em;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--headline-font);
+  font-weight: bold;
+  letter-spacing: 0.05em;
+}
+
+h1 {
+  font-size: 72px;
+  line-height: 1.81;
+  letter-spacing: 0.05em;
+  /* color: #ffffff; */
+}
+
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: 42px;
+  line-height: 1.67;
+}
+
+address {
+  font-style: normal;
+}
+
+a {
+  text-decoration: none;
+}
+
+p {
+  color: #555555;
+}
+
+/* components  */
+.btn-modal-open {
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 1.33;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+.social-links a {
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.36;
+  letter-spacing: 0.2em;
+  color: var(--dark-text);
+}
+
+.social-links a:hover {
+  color: var(--accent);
+}
+
+.subtitle {
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.36;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.subtitle-light {
+  color: rgba(157, 164, 189, 0.6);
+}
+
+.subtitle-dark {
+  color: var(--dark-text);
+}
+
+.section-text {
+  font-size: 18px;
+  line-height: 1.67;
+  letter-spacing: 0.02em;
+}
+
+.section-text-light {
+  color: var(--text-light);
+}
+
+/* /components  */
+
+/* header  */
+.header a {
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 1.33;
+  letter-spacing: 0.1em;
+  /* color: #ffffff; */
+}
+
+/* /header  */
+
+/* HERO */
+/* /HERO */
+
+/* services  */
+.services h2 {
+  /* color: #fff; */
+}
+
+.services span {
+  font-size: 18px;
+  line-height: 1.67;
+  color: var(--text-light);
+}
+/* /services  */
+
+/* advantages  */
+.advantages p {
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.36;
+  color: var(--dark-text);
+}
+
+.advantages .count {
+  font-weight: bold;
+  font-size: 42px;
+  line-height: 1.36;
+  /* text-align: center; */
+  letter-spacing: 0.05em;
+  color: var(--dark-text);
+}
+
+.advantages .count sup {
+  font-weight: normal;
+  color: var(--accent);
+}
+
+/* /advantages  */
+
+/* masters */
+.masters h3 {
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 1.39;
+  letter-spacing: 0.02em;
+  color: var(--dark-text);
+}
+
+.masters-cards p {
+  font-size: 14px;
+  line-height: 1.36;
+  color: var(--accent);
+}
+/* /masters */
+
+/* gallery */
+/* /gallery */
+
+/* contacts */
+.contacts h2 {
+  /* color: #fff; */
+}
+
+.contacts p,
+.contacts-address,
+.contacts-address a {
+  font-size: 18px;
+  line-height: 1.667;
+  color: var(--text-light);
+}
+
+.contacts-address a:hover {
+  color: var(--accent);
+}
+
+.contacts-address a[href^='mailto:'] {
+  text-decoration: underline;
+}
+
+.contacts .work-time {
+  /* color: #fff; */
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.36;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+/* /contacts */
+
+/* footer */
+.footer p {
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.36;
+  color: var(--text-light);
+}
+/* /footer */
