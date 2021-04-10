@@ -45,6 +45,7 @@ h1 {
   line-height: 1.81;
   letter-spacing: 0.05em;
   color: #ffffff;
+  animation-duration: 1000ms;
 }
 
 h2,
@@ -100,10 +101,17 @@ p {
   background: none;
   border: 1px solid #ff6c00;
   border-radius: 25px;
+  transition-duration: 250ms;
+  transition-property: background-color, color;
+}
+
+.btn-modal-open.btn-modal-open-dark-text {
+  color: var(--dark-text);
 }
 
 .btn-modal-open:hover {
   background-color: var(--accent);
+  color: #fff;
 }
 
 .social-links {
@@ -130,6 +138,8 @@ p {
   line-height: 1.36;
   letter-spacing: 0.2em;
   color: var(--dark-text);
+  transition-duration: 250ms;
+  transition-property: color;
 }
 
 .social-links a:hover {
@@ -186,6 +196,10 @@ p {
 
 /* header  */
 .header {
+  position: absolute;
+  width: 100%;
+  top: 0;
+  left: 0;
   padding: 32px 0;
 }
 
@@ -200,6 +214,9 @@ p {
 }
 
 .header .navigation-logo {
+  animation-delay: 1500ms;
+  animation-duration: 1s;
+  animation-iteration-count: 4;
   margin-right: 71px;
 }
 
@@ -231,7 +248,9 @@ p {
   font-size: 12px;
   line-height: 1.33;
   letter-spacing: 0.1em;
-  /* color: #ffffff; */
+  color: #ffffff;
+  transition-duration: 250ms;
+  transition-property: color;
 }
 
 .header a:hover {
@@ -244,11 +263,19 @@ p {
 
 .hero .container {
   display: flex;
-  align-items: flex-start;
 }
 
 .hero .left {
+  padding-left: 30px;
+  padding-bottom: 40px;
+  display: flex;
+  align-items: flex-end;
   width: 100px;
+}
+
+.hero .left .social-links {
+  transform: rotate(-90deg) translate(0, 100%);
+  transform-origin: left bottom;
 }
 
 .hero .right {
@@ -370,14 +397,14 @@ p {
   padding-left: 130px;
 }
 
-.advantages p {
+.advantages .left p {
   font-weight: 600;
   font-size: 11px;
   line-height: 1.36;
   color: var(--dark-text);
 }
 
-.advantages .count {
+.advantages .left .count {
   font-weight: bold;
   font-size: 42px;
   line-height: 1.36;
@@ -442,6 +469,8 @@ p {
 .master-icons .master-svg-icon {
   width: 20px;
   height: 20px;
+  transition-duration: 250ms;
+  transition-property: fill;
 }
 
 .master-link:hover .master-svg-icon {

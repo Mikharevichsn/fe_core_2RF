@@ -15,6 +15,10 @@
       href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Raleway:wght@700&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
     <link rel="stylesheet" href="style.css" />
     <title>Барбершоп</title>
   </head>
@@ -23,7 +27,11 @@
     <header class="header">
       <div class="container">
         <nav class="navigation">
-          <a href="#" aria-label="Логотип BarberShop" class="navigation-logo">
+          <a
+            href="#"
+            aria-label="Логотип BarberShop"
+            class="navigation-logo animate__pulse"
+          >
             <svg aria-label="Логотип BarberShop">
               <use href="./images/sprite.svg#logo"></use>
             </svg>
@@ -53,7 +61,7 @@
           </div>
           <div class="right">
             <p class="subtitle subtitle-light">A hair salon for men in Kyiv</p>
-            <h1>BarberShop</h1>
+            <h1 class="animate__rubberBand">BarberShop</h1>
             <p class="section-text section-text-light">
               Мы эксперты в модных мужских стрижках. Работаем быстро, осторожно
               и со вкусом.
@@ -93,7 +101,12 @@
               клиентами "на одной волне". Поэтому, мы всегда готовы
               усовершенствовать каждого, кто к нам приходит!
             </p>
-            <button type="button" class="btn-modal-open">онлайн-запись</button>
+            <button
+              type="button"
+              class="btn-modal-open btn-modal-open-dark-text"
+            >
+              онлайн-запись
+            </button>
           </div>
         </div>
       </section>
