@@ -46,7 +46,9 @@
         <address class="address">
           <a href="tel:+380441111111">+38 044 111 11 11</a>
         </address>
-        <button type="button" class="btn-modal-open">онлайн-запись</button>
+        <button type="button" class="btn-modal-open" data-modal-open>
+          онлайн-запись
+        </button>
       </div>
     </header>
     <main>
@@ -336,27 +338,54 @@
       <!-- /GALLERY -->
 
       <!-- CONTACTS -->
-      <section class="section contacts">
-        <div class="container">
-          <div>
-            <h2>Контакты</h2>
-            <address class="contacts-address">
-              <ul class="list-no-style">
-                <li>ул. Васильковая, 7А Киев, 08132</li>
-                <li>
-                  <a href="tel:+380441111111">+38 044 111 11 11</a>
-                </li>
-                <li>
-                  <a href="mailto:barbershop@email.com">barbershop@email.com</a>
-                </li>
-              </ul>
-            </address>
-            <p class="work-time">время работы</p>
-            <p>Ежедневно с 9:00 до 22:00</p>
-          </div>
-        </div>
+      <div class="contacts-wrapper">
         <!-- FORM  -->
-      </section>
+        <section class="section section-form">
+          <div class="form-wrapper">
+            <h2>Онлайн-запись</h2>
+            <form action="" class="contacts-form">
+              <input
+                type="text"
+                name="name"
+                placeholder="Имя*"
+                class="contacts-form-name"
+                required
+              />
+              <input
+                type="tel"
+                name="phone"
+                placeholder="Телефон*"
+                class="contacts-form-phone"
+                required
+              />
+              <textarea
+                name="message"
+                placeholder="Сообщение"
+                class="contacts-form-message"
+              ></textarea>
+              <button type="submit" class="contacts-form-btn">отправить</button>
+            </form>
+          </div>
+        </section>
+        <!-- /FORM  -->
+        <section class="section contacts">
+          <h2>Контакты</h2>
+          <address class="contacts-address">
+            <ul class="list-no-style">
+              <li>ул. Васильковая, 7А Киев, 08132</li>
+              <li>
+                <a href="tel:+380441111111"> +38 044 111 11 11</a>
+              </li>
+              <li>
+                <a href="mailto:barbershop@email.com">barbershop@email.com</a>
+              </li>
+            </ul>
+          </address>
+          <p class="work-time">время работы</p>
+          <p>Ежедневно с 9:00 до 22:00</p>
+        </section>
+      </div>
+
       <!-- /CONTACTS -->
     </main>
     <footer class="footer">
@@ -372,5 +401,67 @@
         </div>
       </div>
     </footer>
+
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal">
+        <div class="close" data-modal-close>X</div>
+        <div class="modal-content">
+          <div class="modal-header">
+            Оставьте свои данные, мы вам перезвоним
+          </div>
+          <div class="modal-form-wrapper">
+            <form action="" class="modal-form">
+              <label>
+                Имя
+                <span class="modal-input-wrapper">
+                  <input type="text" name="name" />
+                  <svg class="modal-input-icon" width="18" height="18">
+                    <use href="./images/sprite.svg#form-icon-person"></use>
+                  </svg>
+                </span>
+              </label>
+              <label>
+                Телефон
+                <span class="modal-input-wrapper">
+                  <input type="text" name="phone" />
+                  <svg class="modal-input-icon" width="18" height="18">
+                    <use href="./images/sprite.svg#form-icon-person"></use>
+                  </svg>
+                </span>
+              </label>
+              <label>
+                Почта
+                <span class="modal-input-wrapper">
+                  <input type="text" name="mail" />
+                  <svg class="modal-input-icon" width="18" height="18">
+                    <use href="./images/sprite.svg#form-icon-person"></use>
+                  </svg>
+                </span>
+              </label>
+              <label>
+                Комментарий
+                <textarea name="comment" placeholder="Введите текст"></textarea>
+              </label>
+              <div class="form-checkbox-wrapper">
+                <input
+                  type="checkbox"
+                  name="policy-agree"
+                  id="policy-checkbox"
+                  class="modal-checkbox visually-hidden"
+                />
+                <label for="policy-checkbox" class="modal-checkbox-label">
+                  <span>
+                    Соглашаюсь с рассылкой и принимаю
+                    <a href="#">Условия договора</a>
+                  </span>
+                </label>
+              </div>
+              <button type="submit" class="modal-input-btn">Отправить</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="./modal.js"></script>
   </body>
 </html>
