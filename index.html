@@ -30,21 +30,29 @@
           <a
             href="#"
             aria-label="Логотип BarberShop"
-            class="navigation-logo animate__pulse"
+            class="logo header__logo animate__pulse"
           >
-            <svg aria-label="Логотип BarberShop">
+            <svg class="logo__image" aria-label="Логотип BarberShop">
               <use href="./images/sprite.svg#logo"></use>
             </svg>
           </a>
-          <ul class="navigation-menu list-no-style">
-            <li><a href="#">О нас</a></li>
-            <li><a href="#">Услуги и цены</a></li>
-            <li><a href="#">Мастера</a></li>
-            <li><a href="#">Контакты</a></li>
+          <ul class="navigation__menu-list list-no-style">
+            <li class="navigation__list-item">
+              <a href="#" class="header__link">О нас</a>
+            </li>
+            <li class="navigation__list-item">
+              <a href="#" class="header__link">Услуги и цены</a>
+            </li>
+            <li class="navigation__list-item">
+              <a href="#" class="header__link">Мастера</a>
+            </li>
+            <li class="navigation__list-item">
+              <a href="#" class="header__link">Контакты</a>
+            </li>
           </ul>
         </nav>
-        <address class="address">
-          <a href="tel:+380441111111">+38 044 111 11 11</a>
+        <address class="address header__address">
+          <a href="tel:+380441111111" class="header__link">+38 044 111 11 11</a>
         </address>
         <button type="button" class="btn-modal-open" data-modal-open>
           онлайн-запись
@@ -105,7 +113,7 @@
             </p>
             <button
               type="button"
-              class="btn-modal-open btn-modal-open-dark-text"
+              class="btn-modal-open btn-modal-open_dark-text about__btn-modal-open"
             >
               онлайн-запись
             </button>
@@ -141,7 +149,9 @@
               </li>
             </ul>
           </div>
-          <button type="button" class="btn-modal-open">онлайн-запись</button>
+          <button type="button" class="btn-modal-open services__btn-modal-open">
+            онлайн-запись
+          </button>
         </div>
       </section>
       <!-- /SERVICES -->

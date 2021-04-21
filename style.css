@@ -1,3 +1,21 @@
+/* 
+block
+header
+btn-modal-open
+navigation
+
+element
+__
+navigation__item
+header__phone-link
+
+modifier
+btn-modal-open_dark-text
+btn-modal-open--dark-text
+header__phone-link_dark-text
+header__phone-link--dark-text
+*/
+
 :root {
   --accent: #ff6c00;
   --main-font: 'Open Sans', sans-serif;
@@ -105,7 +123,7 @@ p {
   transition-property: background-color, color;
 }
 
-.btn-modal-open.btn-modal-open-dark-text {
+.btn-modal-open_dark-text {
   color: var(--dark-text);
 }
 
@@ -203,6 +221,17 @@ p {
   clip: rect(0 0 0 0);
 }
 
+.logo {
+  animation-delay: 1500ms;
+  animation-duration: 1s;
+  animation-iteration-count: 4;
+}
+
+.logo__image {
+  width: 70px;
+  height: 56px;
+}
+
 /* /components  */
 
 /* header  */
@@ -224,37 +253,29 @@ p {
   align-items: center;
 }
 
-.header .navigation-logo {
-  animation-delay: 1500ms;
-  animation-duration: 1s;
-  animation-iteration-count: 4;
+.header__logo {
   margin-right: 71px;
 }
 
-.navigation-logo svg {
-  width: 70px;
-  height: 56px;
-}
-
-.header .navigation-menu {
+.navigation__menu-list {
   display: flex;
   align-items: center;
 }
 
-.navigation-menu li {
+.navigation__list-item {
   margin-right: 40px;
 }
 
-.navigation-menu li:last-child {
+.navigation__list-item:last-child {
   margin-right: 0;
 }
 
-.header .address {
+.header__address {
   margin-left: auto;
   margin-right: 40px;
 }
 
-.header a {
+.header__link {
   font-weight: 600;
   font-size: 12px;
   line-height: 1.33;
@@ -264,7 +285,7 @@ p {
   transition-property: color;
 }
 
-.header a:hover {
+.header__link:hover {
   color: var(--accent);
 }
 
@@ -328,7 +349,7 @@ p {
   margin-left: 64px;
 }
 
-.about .btn-modal-open {
+.about__btn-modal-open {
   margin-top: 40px;
 }
 /* /about */
@@ -374,7 +395,7 @@ p {
   color: var(--text-light);
 }
 
-.services .btn-modal-open {
+.services__btn-modal-open {
   display: block;
   margin: 0 auto;
   margin-top: 50px;
