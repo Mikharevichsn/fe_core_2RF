@@ -1,0 +1,26 @@
+.btn-modal-open {
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 1.33;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+  color: #ffffff;
+  padding: 12px 20px;
+  min-width: 164px;
+  height: 40px;
+  background: none;
+  border: 1px solid #ff6c00;
+  border-radius: 25px;
+  transition-duration: 250ms;
+  transition-property: background-color, color;
+
+  &:hover {
+    background-color: $accent;
+    color: #fff;
+  }
+
+  &_dark-text {
+    color: $dark-text;
+  }
+}

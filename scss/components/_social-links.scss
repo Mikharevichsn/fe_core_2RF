@@ -1,0 +1,31 @@
+.social-links {
+  display: flex;
+  align-items: center;
+
+  &::before {
+    content: '';
+    display: block;
+    margin-right: 40px;
+    width: 60px;
+    height: 1px;
+    background-color: $dark-text;
+  }
+
+  li:not(:last-child) {
+    margin-right: 40px;
+  }
+
+  a {
+    font-weight: 600;
+    font-size: 11px;
+    line-height: 1.36;
+    letter-spacing: 0.2em;
+    color: $dark-text;
+    transition-duration: 250ms;
+    transition-property: color;
+
+    &:hover {
+      color: $accent;
+    }
+  }
+}
