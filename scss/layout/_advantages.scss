@@ -1,0 +1,50 @@
+.advantages {
+  .container {
+    display: flex;
+    align-items: flex-start;
+  }
+
+  .left {
+    display: flex;
+    align-items: flex-start;
+
+    &-list {
+      &:first-child {
+        margin-right: 30px;
+      }
+
+      &li:not(:last-child) {
+        margin-bottom: 30px;
+      }
+
+      &:nth-child(2) li:first-child {
+        margin-top: 33px;
+      }
+    }
+
+    p {
+      font-weight: 600;
+      font-size: 11px;
+      line-height: 1.36;
+      color: $dark-text;
+    }
+
+    .count {
+      font-weight: bold;
+      font-size: 42px;
+      line-height: 1.36;
+      /* text-align: center; */
+      letter-spacing: 0.05em;
+      color: $dark-text;
+
+      sup {
+        font-weight: normal;
+        color: $accent;
+      }
+    }
+  }
+
+  .right {
+    padding-left: 130px;
+  }
+}

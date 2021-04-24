@@ -1,0 +1,35 @@
+.header {
+  position: absolute;
+  width: 100%;
+  top: 0;
+  left: 0;
+  padding: 32px 0;
+
+  .container {
+    display: flex;
+    align-items: center;
+  }
+
+  &__logo {
+    margin-right: 71px;
+  }
+
+  &__address {
+    margin-left: auto;
+    margin-right: 40px;
+  }
+
+  &__link {
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 1.33;
+    letter-spacing: 0.1em;
+    color: #ffffff;
+    transition-duration: 250ms;
+    transition-property: color;
+
+    &:hover {
+      color: $accent;
+    }
+  }
+}

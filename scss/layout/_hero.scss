@@ -1,0 +1,30 @@
+.hero {
+  .container {
+    display: flex;
+  }
+
+  .left {
+    padding-left: 30px;
+    padding-bottom: 40px;
+    display: flex;
+    align-items: flex-end;
+    width: 100px;
+
+    .social-links {
+      transform: rotate(-90deg) translate(0, 100%);
+      transform-origin: left bottom;
+    }
+  }
+
+  .right {
+    background-image: linear-gradient(
+        rgba(25, 28, 38, 0.2),
+        rgba(25, 28, 38, 0.2)
+      ),
+      url('../images/bg-hero.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 272px 100px 206px 100px;
+    flex-grow: 1;
+  }
+}

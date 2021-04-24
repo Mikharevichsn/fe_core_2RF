@@ -1,0 +1,29 @@
+.about {
+  .container {
+    display: flex;
+    align-items: center;
+  }
+
+  .about-list-pics {
+    display: flex;
+    align-items: center;
+
+    img {
+      width: 270px;
+      height: 445px;
+    }
+
+    li:not(:last-child) {
+      margin-right: 30px;
+    }
+  }
+
+  .right {
+    width: 500px;
+    margin-left: 64px;
+  }
+
+  .about__btn-modal-open {
+    margin-top: 40px;
+  }
+}

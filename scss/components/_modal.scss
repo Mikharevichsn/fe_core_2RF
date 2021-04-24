@@ -1,0 +1,65 @@
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  /* способ 1 */
+  padding: 20px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  overflow-y: auto;
+  /* /способ 1 */
+
+  &.is-hidden {
+    display: none;
+  }
+
+  .modal {
+    position: relative;
+    width: 528px;
+    min-height: 350px;
+    background: #fff;
+    /* способ2 */
+    /* position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          overflow-y: auto; */
+    /* /способ2 */
+
+    &-content {
+      padding: 40px;
+    }
+
+    &-header {
+      font-style: normal;
+      font-weight: bold;
+      font-size: 18px;
+      line-height: 1.15;
+      text-align: center;
+      letter-spacing: 0.03em;
+
+      color: #212121;
+    }
+
+    .close {
+      cursor: pointer;
+      padding: 3px 10px;
+      border: 1px solid #000;
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      border-radius: 50%;
+      font-weight: bold;
+
+      &:hover {
+        background-color: #000;
+        color: #fff;
+      }
+    }
+  }
+}

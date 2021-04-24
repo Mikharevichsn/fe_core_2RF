@@ -1,0 +1,143 @@
+.contacts-wrapper {
+  background-color: #191c26;
+  display: flex;
+  align-items: flex-start;
+
+  h2 {
+    color: #fff;
+  }
+}
+
+.contacts {
+  padding-right: 15px;
+  background-image: url('../images//bg-contacts.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-left: 100px;
+  width: 50%;
+
+  .contacts-address li:not(:last-child) {
+    margin-bottom: 20px;
+  }
+
+  .contacts p,
+  .contacts-address,
+  .contacts-address a {
+    font-size: 18px;
+    line-height: 1.667;
+    color: $text-light;
+  }
+
+  .contacts-address a {
+    &:hover {
+      color: $accent;
+    }
+
+    &[href^='mailto:'] {
+      text-decoration: underline;
+    }
+  }
+
+  .work-time {
+    margin-top: 70px;
+    margin-bottom: 20px;
+    /* color: #fff; */
+    font-weight: 600;
+    font-size: 11px;
+    line-height: 1.36;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+  }
+}
+
+.section-form {
+  padding-left: 15px;
+  width: 50%;
+  display: flex;
+  justify-content: flex-end;
+  padding-right: 40px;
+
+  .form-wrapper {
+    width: 560px;
+
+    .contacts-form {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+
+      input {
+        height: 23px;
+
+        &.contacts-form-name {
+          width: 270px;
+        }
+
+        &.contacts-form-phone {
+          width: 260px;
+        }
+      }
+
+      textarea {
+        height: 60px;
+        margin: 44px 0;
+        resize: none;
+
+        &.contacts-form-message {
+          width: 100%;
+        }
+      }
+
+      input,
+      textarea {
+        background: none;
+        border: none;
+        border-bottom: 1px solid rgba(157, 164, 189, 0.4);
+
+        font-style: normal;
+        font-weight: 600;
+        font-size: 11px;
+        line-height: 1.364;
+        letter-spacing: 0.1em;
+        color: #ffffff;
+
+        &::placeholder {
+          text-transform: uppercase;
+          color: rgba(157, 164, 189, 0.4);
+        }
+
+        &:focus::placeholder {
+          color: #fff;
+        }
+
+        &:focus {
+          outline: none;
+          /* border-bottom: 1px solid #fff; ниже аналог */
+          border-color: #fff;
+        }
+      }
+
+      .contacts-form-btn {
+        cursor: pointer;
+        font-weight: 600;
+        font-size: 12px;
+        line-height: 1.33;
+        letter-spacing: 0.09em;
+        text-transform: uppercase;
+        color: #ffffff;
+        padding: 12px 20px;
+        min-width: 164px;
+        height: 40px;
+        background: none;
+        border: 1px solid #ff6c00;
+        border-radius: 25px;
+        transition-duration: 250ms;
+        transition-property: background-color, color;
+
+        &:hover {
+          background-color: $accent;
+          color: #fff;
+        }
+      }
+    }
+  }
+}

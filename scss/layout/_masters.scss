@@ -1,0 +1,56 @@
+.masters {
+  background-color: $grey-bg;
+
+  h3 {
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 1.39;
+    letter-spacing: 0.02em;
+    color: $dark-text;
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 8px;
+  }
+
+  &-cards {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+
+    p {
+      font-size: 14px;
+      line-height: 1.36;
+      color: $accent;
+      text-align: center;
+    }
+
+    .master-icons {
+      margin: 0 auto;
+      margin-top: 30px;
+      width: 270px;
+      display: flex;
+      justify-content: space-between;
+
+      .master-link {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 44px;
+        height: 44px;
+        border-radius: 50%;
+        background: #ffffff;
+
+        .master-svg-icon {
+          width: 20px;
+          height: 20px;
+          transition-duration: 250ms;
+          transition-property: fill;
+        }
+
+        &:hover .master-svg-icon {
+          fill: $accent;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,17 @@
+.footer {
+  padding: 56px 0;
+  background-color: $grey-bg;
+
+  .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  p {
+    font-weight: 600;
+    font-size: 11px;
+    line-height: 1.36;
+    color: $text-light;
+  }
+}
