@@ -1,29 +1,66 @@
 .about {
-  .container {
-    display: flex;
-    align-items: center;
-  }
-
-  .about-list-pics {
-    display: flex;
-    align-items: center;
-
-    img {
-      width: 270px;
-      height: 445px;
-    }
-
-    li:not(:last-child) {
-      margin-right: 30px;
-    }
-  }
-
-  .right {
-    width: 500px;
-    margin-left: 64px;
+  .left {
+    display: none;
   }
 
   .about__btn-modal-open {
     margin-top: 40px;
+  }
+}
+
+@media screen and (min-width: $tablet) {
+  .about {
+    .container {
+      display: flex;
+      align-items: flex-start;
+    }
+    .left {
+      display: block;
+
+      .about-list-pics {
+        img {
+          width: 330px;
+          height: 235px;
+        }
+      }
+    }
+    .right {
+      margin-left: 30px;
+    }
+  }
+}
+
+@media screen and (min-width: $tablet) and (max-width: $desktop) {
+  .about {
+    .left {
+      .about-list-pics {
+        li:not(:last-child) {
+          margin-bottom: 30px;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: $desktop) {
+  .about {
+    .left {
+      .about-list-pics {
+        display: flex;
+        align-items: center;
+
+        img {
+          width: 270px;
+          height: 445px;
+        }
+        li:not(:last-child) {
+          margin-right: 30px;
+        }
+      }
+    }
+    .right {
+      width: 500px;
+      margin-left: 64px;
+    }
   }
 }

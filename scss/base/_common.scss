@@ -43,8 +43,8 @@ h3,
 h4,
 h5,
 h6 {
-  font-size: 42px;
-  line-height: 1.167;
+  font-size: 28px;
+  line-height: 1.18;
 }
 
 address {
@@ -145,6 +145,14 @@ p {
   h1 {
     font-size: 72px;
     line-height: 1.81;
+  }
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-size: 42px;
+    line-height: 1.167;
   }
   .section-text {
     font-size: 18px;
