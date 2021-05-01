@@ -31,8 +31,8 @@ h6 {
 }
 
 h1 {
-  font-size: 72px;
-  line-height: 1.81;
+  font-size: 48px;
+  line-height: 1.667;
   letter-spacing: 0.05em;
   color: #ffffff;
   animation-duration: 1000ms;
@@ -64,9 +64,8 @@ p {
 }
 
 .container {
-  width: 1200px;
-  padding: 0 15px;
   margin: 0 auto;
+  padding: 0 31px;
 }
 
 .list-no-style {
@@ -122,12 +121,33 @@ p {
 }
 
 .section-text {
-  font-size: 18px;
-  line-height: 1.67;
+  font-size: 16px;
+  line-height: 1.62;
   letter-spacing: 0.02em;
   margin-bottom: 20px;
 
   &-light {
     color: $text-light;
+  }
+}
+
+@media screen and (min-width: $tablet) {
+  .container {
+    padding: 0 39px;
+  }
+}
+
+@media screen and (min-width: $desktop) {
+  .container {
+    width: 1200px;
+    padding: 0 15px;
+  }
+  h1 {
+    font-size: 72px;
+    line-height: 1.81;
+  }
+  .section-text {
+    font-size: 18px;
+    line-height: 1.67;
   }
 }
